@@ -63,7 +63,7 @@ const panel =
 function Divider() {
   return <div className="my-2 h-px bg-gray-300 border-t border-white" />;
 }
-const Chevron = () => <span className="ml-auto text-gray-700">▶</span>;
+const Chevron = () => <span className="ml-auto">▶</span>;
 
 /** One menu level; controls which child index is open */
 function MenuLevel({
@@ -120,7 +120,7 @@ export default function Menu() {
       {/* Start button bottom-left */}
       <button
         className="bottom-2 left-2 z-20 flex items-center gap-2 px-3 py-1.5
-                   bg-[#2c7a2c] text-white border border-black/30 shadow active:translate-y-px"
+                   bg-[#2c7a2c] text-white border border-green-900 border-b-3 border-r-3 hover:border-b-4 hover:border-r-4 shadow active:translate-y-px"
         onClick={() => setOpen((v) => !v)}
       >
         Menu

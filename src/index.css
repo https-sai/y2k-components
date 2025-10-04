@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Sometype Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 20px;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #262626;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pixelify-sans-font {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.grid-background-container {
+  width: 100%;
+  height: full; /* Adjust as needed */
+  --grid-size: 30px;                    /* spacing between lines */
+  --grid-thickness: 1px;                /* line weight */
+  --grid-color: #3ca1ff4b; /* subtle indigo-ish */
+  background-color: #ffffff;            /* slate-950 */
+  background-image:
+    repeating-linear-gradient(
+      to right,
+      var(--grid-color) 0 calc(var(--grid-thickness)),
+      transparent calc(var(--grid-thickness)) var(--grid-size)
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--grid-color) 0 calc(var(--grid-thickness)),
+      transparent calc(var(--grid-thickness)) var(--grid-size)
+    );
+  background-size: var(--grid-size) var(--grid-size);
+}
+
+.lined-background-container {
+  width: 100%;
+  height: full; /* Adjust as needed */
+  --grid-size: 30px;                    /* spacing between lines */
+  --grid-thickness: 1px;                /* line weight */
+  --grid-color: #3ca1ff4b; 
+  background-color: #fff0b0;            /* slate-950 */
+  background-image:
+    repeating-linear-gradient(
+      to bottom,
+      var(--grid-color) 0 calc(var(--grid-thickness)),
+      transparent calc(var(--grid-thickness)) var(--grid-size)
+    );
+  background-size: var(--grid-size) var(--grid-size);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  
+}

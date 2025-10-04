@@ -1,5 +1,5 @@
-import Window from "./components/window";
-import Postit from "./components/postit";
+import Window from "./components/Window";
+import Postit from "./components/Postit";
 import Menu from "./components/Menu";
 
 function App() {

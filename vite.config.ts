@@ -2,6 +2,9 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
+const repo = 'y2k-components' // e.g. my-portfolio
+const isPages = process.env.GITHUB_PAGES === 'true'
+
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -12,4 +15,5 @@ export default defineConfig({
     }),
     tailwindcss(),
   ],
+  base: isPages ? `/${repo}/` : '/',
 })

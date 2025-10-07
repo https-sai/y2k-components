@@ -1,5 +1,28 @@
 @import "tailwindcss";
 
+html, body, #root, * {
+  cursor: none !important;
+}
+
+/* The fake cursor element */
+.custom-cursor {
+  position: fixed;
+  left: 0; top: 0;
+  width: 20px; height: 20px;       /* any size you want */
+  pointer-events: none;             /* don't block clicks */
+  transform: translate(-50%, -50%); /* center on pointer */
+  z-index: 999999;                  /* above everything */
+  will-change: transform;
+}
+
+.custom-cursor img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+
 :root {
   font-family: "Sometype Mono", monospace;
   font-optical-sizing: auto;
@@ -8,6 +31,7 @@
   line-height: 1.5;
   font-weight: 400;
   font-size: 20px;
+  cursor: none;
 
   color-scheme: light dark;
   color: rgba(0, 0, 0, 0.87);

@@ -1,6 +1,6 @@
 export default function Window() {
   return (
-    <div className="w-[820px] bg-zinc-300 text-black border border-black hover:border-b-4 hover:border-r-4 shadow-[inset_2px_2px_0_#fff] rounded-sm p-3">
+    <div className="w-[820px] bg-zinc-300 text-black border border-black hover:border-b-4 hover:border-r-4 shadow-[inset_2px_2px_0_#fff] rounded-sm p-2">
       <div
         className="flex items-center justify-between rounded-sm px-4 py-2 
       bg-blue-800 border border-black shadow-[inset_2px_2px_0_#fff]"

@@ -1,7 +1,6 @@
 import Window from "./components/Window";
 import Postit from "./components/Postit";
 import Menu from "./components/Menu";
-import CustomCursor from "./components/CustomCursor";
 
 function App() {
   return (

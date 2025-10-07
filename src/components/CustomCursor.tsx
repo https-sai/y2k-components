@@ -42,7 +42,7 @@ export default function CustomCursor() {
 
   return (
     <div className="custom-cursor" ref={ref} aria-hidden>
-      <img src="/icons/Pencil Icon 32.png" alt="" />
+      <img src="/icons/pencil-icon.png" alt="" />
     </div>
   );
 }

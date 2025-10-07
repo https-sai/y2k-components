@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import pencilIcon from "/icons/pencil-icon.png";
+import pencilIcon from "../assets/pencil-icon.png";
 
 export default function CustomCursor() {
   const ref = useRef<HTMLDivElement>(null);

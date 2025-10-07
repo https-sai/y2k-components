@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-const repo = 'y2k-components' // e.g. my-portfolio
+const repo = 'y2k-components' 
 const isPages = process.env.GITHUB_PAGES === 'true'
 
 // https://vite.dev/config/

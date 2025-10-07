@@ -7,13 +7,13 @@ export default function Window() {
       >
         <span className="text-2xl font-semibold text-white">Title</span>
         <div className="flex gap-2">
-          <button className="h-6 w-8 grid place-items-center bg-zinc-300 hover:bg-zinc-400 text-black border border-black shadow-[inset_2px_2px_0_#fff]">
+          <button className="h-6 w-6 grid place-items-center bg-zinc-300 hover:bg-zinc-400 text-black border border-black shadow-[inset_2px_2px_0_#fff]">
             <p className="">-</p>
           </button>
-          <button className="h-6 w-8 grid place-items-center bg-zinc-300 hover:bg-zinc-400 border border-black shadow-[inset_2px_2px_0_#fff] ">
-            <span className="h-3 w-3 border border-black block"></span>
+          <button className="h-6 w-6 grid place-items-center bg-zinc-300 hover:bg-zinc-400 border border-black shadow-[inset_2px_2px_0_#fff] ">
+            <span className="h-2 w-2 border-2 border-black block"></span>
           </button>
-          <button className="h-6 w-8 grid place-items-center bg-zinc-300 hover:bg-zinc-400 border border-black shadow-[inset_2px_2px_0_#fff]">
+          <button className="h-6 w-6 grid place-items-center bg-zinc-300 hover:bg-zinc-400 border border-black shadow-[inset_2px_2px_0_#fff]">
             <p className="">✕</p>
           </button>
         </div>

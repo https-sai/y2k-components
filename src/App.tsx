@@ -6,7 +6,6 @@ import CustomCursor from "./components/CustomCursor";
 function App() {
   return (
     <div className="min-h-dvh p-8 flex flex-col grid-background-container">
-      <CustomCursor />
       <p className="text-5xl p-2">y2k components</p>
       <div className="min-h-dvh w-full p-8">
         <div className="p-4">

@@ -1,8 +1,10 @@
 import { useEffect, useRef } from "react";
-import pencilIcon from "../assets/pencil-icon.png";
 
 export default function CustomCursor() {
   const ref = useRef<HTMLDivElement>(null);
+
+  console.log("BASE_URL:", import.meta.env.BASE_URL);
+  console.log("Full path:", `${import.meta.env.BASE_URL}icons/pencil-icon.png`);
 
   useEffect(() => {
     const el = ref.current!;
@@ -43,7 +45,10 @@ export default function CustomCursor() {
 
   return (
     <div className="custom-cursor" ref={ref} aria-hidden>
-      <img src={pencilIcon} alt="pencil" />
+      <img
+        src={`${import.meta.env.BASE_URL}icons/pencil-icon.png`}
+        alt="pencil"
+      />
     </div>
   );
 }
